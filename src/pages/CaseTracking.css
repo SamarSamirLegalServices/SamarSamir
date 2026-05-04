@@ -1,0 +1,132 @@
+.tracking-page {
+  padding: 4rem 0;
+  min-height: calc(100vh - 80px);
+}
+
+.tracking-header {
+  margin-bottom: 3rem;
+}
+
+.tracking-header .text-muted {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--color-text-muted);
+}
+
+.tracking-search-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: var(--color-surface);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.search-btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.error-message {
+  max-width: 500px;
+  margin: 2rem auto 0;
+  padding: 1rem;
+  background-color: rgba(220, 53, 69, 0.1);
+  border: 1px solid rgba(220, 53, 69, 0.5);
+  color: #ff6b6b;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.case-details-card {
+  max-width: 700px;
+  margin: 3rem auto 0;
+  background-color: var(--color-surface);
+  border-radius: 12px;
+  border: 1px solid var(--color-accent);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15);
+  overflow: hidden;
+}
+
+.case-header {
+  background-color: rgba(212, 175, 55, 0.1);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.case-header h3 {
+  margin: 0;
+  color: var(--color-accent);
+}
+
+.status-badge {
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.case-info-grid {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.info-label {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.info-value.highlight {
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}
+
+.update-box {
+  background-color: var(--color-primary-dark);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-right: 4px solid var(--color-accent);
+  margin-top: 1rem;
+}
+
+.update-text {
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .case-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .case-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
